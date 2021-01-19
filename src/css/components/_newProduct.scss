@@ -1,0 +1,14 @@
+.new-products {
+    max-width: 1980px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    &__items {
+        display: flex;
+        margin: 75px 0;
+        justify-content: space-evenly;
+        background:  url(../img/bubbles-1.png), linear-gradient(90deg, rgba(202,226,250,1) 2%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 95%, rgba(202,226,250,1) 98%);
+        
+    }
+
+}

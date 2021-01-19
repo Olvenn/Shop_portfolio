@@ -1,0 +1,128 @@
+.card {
+    width: 375px;
+    padding: 35px 30px 50px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, #cae2fa 3%, rgba(255,255,255,1) 100%);
+    border-bottom: 3px solid rgba(202,226,250,1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+
+    &__pic {
+      padding: 15px;
+      background-color: #fff;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    &__img {
+      object-fit: contain;
+      width: 325px;
+      height: 325px;
+    }
+
+    &__cover {
+      margin: 40px 0;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    &__estimator {
+      padding: 30px 10px 0;
+
+      display: flex;
+      justify-content: space-between;
+   }
+
+    &__wrap-text {
+      padding: 5px;
+    }
+
+    &__name {
+      font-family: Avenir Medium;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    &__price {
+      font-family: Avenir Medium;
+      margin-bottom: 5px;
+
+    }
+}
+
+
+
+/* .top-sales__top {
+  height: 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(40,50,60,1) 50%, rgba(255,255,255,1) 100%);
+} */
+
+.card {
+    &__heart {
+        width: 2.62rem;
+        height: 1.88rem;
+
+        position: relative;
+    }
+
+    &__heart-cover {
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+    }
+
+    &__heart1 {
+        width: 1.36rem;
+        height: 2.38rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #bedefd;
+        box-shadow: 1px 0px 1px $color-primary-dark;
+        border-radius: 50px 50px 0 0;
+        transform: rotate(315deg);
+      }
+
+      &__heart2 {
+        position: absolute;
+        width: 2.38rem;
+        height: 1.36rem;
+        right: 0;
+        bottom: 0;
+        box-shadow:  1px 2px 2px $color-primary-dark;
+        transform: rotate(315deg);
+        background-color: #bedefd;
+        border-radius: 0 50px 50px 0;
+      }
+
+      $__heart:hover:before, &__heart:hover{
+        animation: pulsate 1s infinite;
+      }
+
+      &__stars {
+        font-family: Avenir Medium;
+        font-size: 30px;
+        margin: 7px 0;
+      }
+
+      &__count {
+        font-family: Avenir Medium;
+        color: #777;
+        font-size: 20px;
+      }
+}
+
+.add-to-cart {
+  width: 221px;
+  display: block;
+  margin: 0 auto;
+  margin-top: auto;
+}
+
