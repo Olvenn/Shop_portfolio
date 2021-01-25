@@ -2,13 +2,10 @@
 @import "abctracts/fonts";
 @import "abctracts/mixins";
 @import "abctracts/normalize";
-
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
 @import "base/utilleties";
-
-
 @import "components/button";
 @import "components/category";
 @import "components/main-slider";
@@ -26,17 +23,10 @@
 @import "components/photo";
 @import "components/description";
 @import "components/size";
-
 @import "layout/grid";
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
-
 @import "pages/home";
 @import "pages/catalog";
 @import "pages/product";
-
-
-
-
-

@@ -32,69 +32,76 @@ let cssFiles = [
 ];
 */
 
-function clear(){
-	return del('build/*');
+function clear() {
+    return del('build/*');
 }
 
-function styles(){
-	return gulp.src('./src/css/+(styles|styles-per|styles-ie9).scss')
-			   .pipe(gulpif(isDev, sourcemaps.init()))
-			   .pipe(sass())
-			   //.pipe(concat('style.css'))
-			   .pipe(gcmq())
-			   .pipe(autoprefixer({
-		            browsers: ['> 0.1%'],
-		            cascade: false
-		        }))
-			   //.on('error', console.error.bind(console))
-			   .pipe(gulpif(isProd, cleanCSS({
-			   		level: 2
-			   })))
-			   .pipe(gulpif(isDev, sourcemaps.write()))
-			   .pipe(gulp.dest('./build/css'))
-			   .pipe(gulpif(isSync, browserSync.stream()));
+function styles() {
+    return gulp.src('./src/css/+(styles|styles-per|styles-ie9).scss')
+        .pipe(gulpif(isDev, sourcemaps.init()))
+        .pipe(sass())
+        //.pipe(concat('style.css'))
+        .pipe(gcmq())
+        .pipe(autoprefixer({
+            browsers: ['> 0.1%'],
+            cascade: false
+        }))
+        //.on('error', console.error.bind(console))
+        .pipe(gulpif(isProd, cleanCSS({
+            level: 2
+        })))
+        .pipe(gulpif(isDev, sourcemaps.write()))
+        .pipe(gulp.dest('./build/css'))
+        .pipe(gulpif(isSync, browserSync.stream()));
 }
 
-function img(){
-	return gulp.src('./src/img/**/*')
-			   .pipe(gulp.dest('./build/img'))
+function img() {
+    return gulp.src('./src/img/**/*')
+        .pipe(gulp.dest('./build/img'))
 }
 
-function html(){
-	return gulp.src('./src/*.html')
-			   .pipe(gulp.dest('./build'))
-			   .pipe(gulpif(isSync, browserSync.stream()));
+function js() {
+    return gulp.src('./src/js/**/*')
+        .pipe(gulp.dest('./build/js'))
+
 }
 
-function watch(){
-	if(isSync){
-		browserSync.init({
-	        server: {
-	            baseDir: "./build/",
-	        }
-	    });
-	}
-
-	gulp.watch('./src/css/**/*.scss', styles);
-	gulp.watch('./src/**/*.html', html);
-	gulp.watch('./smartgrid.js', grid);
+function html() {
+    return gulp.src('./src/*.html')
+        .pipe(gulp.dest('./build'))
+        .pipe(gulpif(isSync, browserSync.stream()));
 }
 
-function grid(done){
-	delete require.cache[require.resolve('./smartgrid.js')];
+function watch() {
+    if (isSync) {
+        browserSync.init({
+            server: {
+                baseDir: "./build/",
+            }
+        });
+    }
 
-	let settings = require('./smartgrid.js');
-	smartgrid('./src/css', settings);
+    gulp.watch('./src/css/**/*.scss', styles);
+    gulp.watch('./src/**/*.html', html);
 
-	settings.offset = '3.1%';
-	settings.filename = 'smart-grid-per';
-	smartgrid('./src/css', settings);
-
-	done();
+    gulp.watch('./smartgrid.js', grid);
 }
 
-let build = gulp.series(clear, 
-	gulp.parallel(styles, img, html)
+function grid(done) {
+    delete require.cache[require.resolve('./smartgrid.js')];
+
+    let settings = require('./smartgrid.js');
+    smartgrid('./src/css', settings);
+
+    settings.offset = '3.1%';
+    settings.filename = 'smart-grid-per';
+    smartgrid('./src/css', settings);
+
+    done();
+}
+
+let build = gulp.series(clear,
+    gulp.parallel(styles, img, html, js)
 );
 
 gulp.task('build', gulp.series(grid, build));
