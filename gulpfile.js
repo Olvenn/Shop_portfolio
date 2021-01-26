@@ -63,6 +63,7 @@ function img() {
 function js() {
     return gulp.src('./src/js/**/*')
         .pipe(gulp.dest('./build/js'))
+        .pipe(gulpif(isSync, browserSync.stream()));
 
 }
 

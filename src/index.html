@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/styles.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>Diving bell</title>
     <style>
@@ -36,12 +36,21 @@
         <!-- Здесь временно лежит svg спрайт -->
     </div>
 
-    <div class="container">
 
-        <header class="header">
+
+    <header class="header">
+        <div class="wrapper">
             <!-- <div class="header__logo">
         <img class="header__logo-img" src="img/logo_clear.svg" alt="Full logo" height="150">
       </div> -->
+
+            <div class="header__logo">
+                <div class="logo">
+                    <svg width="150px" height="150px">
+                        <use xlink:href="#logo_grad"></use>
+                    </svg>
+                </div>
+            </div>
 
             <div class="nav-user">
 
@@ -50,14 +59,13 @@
                         Search
                     </li>
                     <li class="nav-user__item nav-user__item--logo">
-                        <div class="header__logo1">
+                        <!-- <div class="header__logo">
                             <div class="logo">
-
                                 <svg width="250px" height="250px">
-    <use xlink:href="#logo_grad"></use>
-  </svg>
-
+                                    <use xlink:href="#logo_grad"></use>
+                                </svg>
                             </div>
+                        </div> -->
                     </li>
                     <li class="nav-user__item nav-user__item--user">
                         User
@@ -66,55 +74,52 @@
                         Cart
                     </li>
                 </ul>
-                </div>
-                <nav class="main-nav">
-                    <ul class="main-nav__items">
-                        <li class="main-nav__items main-nav__items-home">
-                            Home
+            </div>
+
+            <nav class="main-nav">
+                <ul class="main-nav__items">
+                    <li class="main-nav__items main-nav__items-home">
+                        Home
+                    </li>
+                    <li class="main-nav__items main-nav__items-Catalog">
+                        <a href="catalog.html" class="main-nav__atalog">
+                            Catalog
+                        </a>
+                    </li>
+
+                    <ul class="main-nav__subnav subnav__items">
+                        <li class="subnav__item">
+                            Masks
                         </li>
-                        <li class="main-nav__items main-nav__items-Catalog">
-                            <a href="catalog.html" class="main-nav__atalog">
-              Catalog
-            </a>
+                        <li class="subnav__item">
+                            Fins
                         </li>
-                        <li class="main-nav__items main-nav__items-shop">
-                            <a href="product.html" class="main-nav__atalog">
-              Product
-            </a>
-                        </li>
-                        <ul class="main-nav__subnav subnav__items">
-                            <li class="subnav__item">
-                                Masks
-                            </li>
-                            <li class="subnav__item">
-                                Fins
-                            </li>
-                            <li class="subnav__item">
-                                Snorkels
-                            </li>
-                        </ul>
-                        <li class="main-nav__items main-nav__items-contact">
-                            <a href="contact.html" class="main-nav__login">
-              Blog
-            </a>
-                        </li>
-                        <li class="main-nav__items main-nav__items-contact">
-                            <a href="contact.html" class="main-nav__login">
-              Contact
-            </a>
+                        <li class="subnav__item">
+                            Snorkels
                         </li>
                     </ul>
-                </nav>
-        </header>
-
-
+                    <li class="main-nav__items main-nav__items-contact">
+                        <a href="contact.html" class="main-nav__login">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="main-nav__items main-nav__items-contact">
+                        <a href="contact.html" class="main-nav__login">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <br>
 
-        <!-- <?xml version="1.0" encoding="UTF-8"?>
+
+    <br>
+
+    <!-- <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> -->
-        <!-- Creator: CorelDRAW X8 -->
+    <!-- Creator: CorelDRAW X8 -->
 
 
 

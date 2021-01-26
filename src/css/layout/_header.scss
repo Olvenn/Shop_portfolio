@@ -1,9 +1,8 @@
 .header {
-    margin: 0 auto;
-    width: 100vw;
+    // width: 100vw;
     position: relative;
-    box-shadow: inset  0 30px 30px -20px  $color-primary;
-    box-shadow: inset 0px 0px 20px  $color-primary-dark;
+    box-shadow: inset 0 30px 30px -20px $color-primary;
+    box-shadow: inset 0px 0px 20px $color-primary-dark;
 }
 
 .header__logo {
@@ -18,12 +17,11 @@
 
 .nav-user {
     /* background:  linear-gradient(90deg, rgba(40,50,60,1) 45%, rgba(255,255,255,1) 50%, rgba(40,50,60,1) 55%); */
-    width: 100vw;
-    background: url(../img/logo_w.svg) no-repeat top center; 
-    background-size: auto 150px;
+    // width: 100vw;
+    // background: url(../img/logo_w.svg) no-repeat top center; 
+    // background-size: auto 150px;
     background-color: $color-primary;
     color: $color-white;
-
 }
 
 .nav-user__items {
@@ -51,8 +49,6 @@
     margin-right: auto;
 }
 
-
-
 .main-nav {
     width: 100vw;
     /* background: linear-gradient(90deg, white 45%, rgba(40,50,60,1) 45%, rgba(255,255,255,1) 50%, rgba(40,50,60,1) 55%, white 55%); */
@@ -65,8 +61,7 @@
 }
 
 
-                                                                                
-    /* .wave::after{
+/* .wave::after{
     content: "";
     position: absolute;
     left: 0;
