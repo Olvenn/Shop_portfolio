@@ -63,6 +63,8 @@ function img() {
 function js() {
     return gulp.src('./src/js/**/*')
         .pipe(gulp.dest('./build/js'))
+        .pipe(gulpif(isSync, browserSync.stream()));
+
 
 }
 
@@ -83,7 +85,7 @@ function watch() {
 
     gulp.watch('./src/css/**/*.scss', styles);
     gulp.watch('./src/**/*.html', html);
-
+    gulp.watch('./src/js/**/*.js', js);
     gulp.watch('./smartgrid.js', grid);
 }
 

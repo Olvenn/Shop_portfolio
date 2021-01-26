@@ -1,6 +1,5 @@
 *,
-*::after
-*::before {
+*::after *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,15 +7,19 @@
 
 body {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
-    }
-
+}
 
 img {
-    width: 100%;
-    vertical-align: bottom;
+    max-width: 100%;
+    margin: 0 auto;
+    // vertical-align: bottom;
     line-height: 0
+}
+
+.wrapper {
+    @include wrapper();
 }
 
 ul {
@@ -27,37 +30,35 @@ ul {
 p {
     margin-block-start: 0em;
     margin-block-end: 0em;
-  
-  }
-
+}
 
 body {
     font-family: "Avenir Next Regular";
     font-size: $default-font-size;
-    color: $color-text-main; 
+    color: $color-text-main;
     /* background: radial-gradient(circle, #fff  0%, $color-fon 100%); */
 }
 
 li {
     list-style: none;
+
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
     color: inherit;
 }
 
-.container {
-    /* background-color: $color-fon; */
-    margin: 0 auto;
-}
-
-.wave{
+// .container {
+//     margin: 0 auto;
+// }
+.wave {
     width: 630px;
     background: #333;
     height: 30px;
     position: relative;
-    }
+}
+
 
 /* .wave::after{
     content: "";
@@ -81,7 +82,7 @@ a {
 
 .header {
     /* background-color: blue; */
-} 
+}
 
 main {
     /* background-color: red; */
@@ -91,6 +92,7 @@ footer {
     background-color: yellow;
 }
 
+
 /* .divs {
     width: 200px;
     height: 230px;
@@ -98,7 +100,3 @@ footer {
     margin: 0 auto;
 
 } */
-
-
-
-
