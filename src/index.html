@@ -18,11 +18,10 @@
             width: 0;
             height: 0;
         }
-
+        
         .logo2 {
-            fill= #linear-gradient;
+            fill=#linear-gradient;
         }
-
     </style>
 </head>
 
@@ -46,36 +45,45 @@
                 </div>
             </div> -->
             <div class="header__logo">
-                <div class="logo logo2">
-                    <svg width="150px" height="150px">
-                        <use xlink:href="#logo_grad"></use>
+                <svg width="120px" height="120px">
+                        <use xlink:href="#logo_bell"></use>
                     </svg>
-                </div>
             </div>
 
 
             <div class="nav-user">
-
-                <ul class="nav-user__items">
-                    <li class="nav-user__item nav-user__item--search">
-                        Search
+                <ul class="nav-user__item nav-user__item--main">
+                    <li class="nav-user__items nav-user__items--home">
+                        Home
                     </li>
-                    <li class="nav-user__item nav-user__item--logo">
-                        <!-- <div class="header__logo">
-                            <div class="logo">
-                                <svg width="250px" height="250px">
-                                    <use xlink:href="#logo_grad"></use>
-                                </svg>
-                            </div>
-                        </div> -->
+                    <li class="nav-user__items nav-user__items--catalog">
+                        <a href="catalog.html">
+                            Catalog
+                        </a>
                     </li>
-                    <li class="nav-user__item nav-user__item--user">
-                        User
+                    <li class="nav-user__items nav-user__items--blog">
+                        <a href="blog.html">
+                            Blog
+                        </a>
                     </li>
-                    <li class="nav-user__item nav-user__item--cart">
-                        Cart
+                    <li class="nav-user__items nav-user__items--contact">
+                        <a href="contact.html">
+                            Contacts
+                        </a>
                     </li>
                 </ul>
+                <ul class="nav-user__item">
+                    <ul class="nav-user__item nav-user__item--user">
+                        <li class="nav-user__items nav-user__items--search">
+                            Search
+                        </li>
+                        <li class="nav-user__items nav-user__items--user">
+                            User
+                        </li>
+                        <li class="nav-user__items nav-user__items--cart">
+                            Cart
+                        </li>
+                    </ul>
             </div>
 
             <nav class="main-nav">
@@ -85,18 +93,38 @@
                     </li>
                     <li class="main-nav__items main-nav__items-Catalog">
                         <a href="catalog.html" class="main-nav__atalog">
+                            Masks
+                        </a>
+                    </li>
+                    <li class="main-nav__items main-nav__items-home">
+                        <a href="catalog.html" class="main-nav__atalog">
+                            Fins
+                        </a>
+                    </li>
+                    <li class="main-nav__items main-nav__items-home">
+                        <a href="catalog.html" class="main-nav__atalog">
+                            Snorkels
+                        </a>
+                    </li>
+                    <li class="main-nav__items main-nav__items-home">
+                        <a href="catalog.html" class="main-nav__atalog">
+                            Catalog
+                        </a>
+                    </li>
+                    <li class="main-nav__items main-nav__items-home">
+                        <a href="catalog.html" class="main-nav__atalog">
                             Catalog
                         </a>
                     </li>
 
                     <ul class="main-nav__subnav subnav__items">
-                        <li class="subnav__item">
+                        <li class="subnav__items">
                             Masks
                         </li>
-                        <li class="subnav__item">
+                        <li class="subnav__items">
                             Fins
                         </li>
-                        <li class="subnav__item">
+                        <li class="subnav__items">
                             Snorkels
                         </li>
                     </ul>

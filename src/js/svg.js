@@ -51,7 +51,7 @@ transform="translate(45, 45)"></path>
 </symbol>
 
 
-<symbol  id="logo_grad" viewBox="0 0 4000 5700" xmlns:xlink="http://www.w3.org/1999/xlink">
+<symbol  id="logo_bell" viewBox="0 0 4000 5700" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 
 <linearGradient id="linear-gradient" x1="0" x2="0" y1="0" y2="1">
@@ -61,7 +61,7 @@ transform="translate(45, 45)"></path>
 <stop offset="100%" stop-color="#1c2f42"/>
 
 <style type="text/css"><![CDATA[
-    #logo_grad { fill: url(#linear-gradient); }
+    #logo_bell { fill: url(#linear-gradient); }
 
   ]]></style>
 
