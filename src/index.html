@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css"> -->
@@ -22,6 +22,11 @@
         .logo2 {
             fill=#linear-gradient;
         }
+        
+        .fo {
+            font-style: "Avenir";
+            font-size: 30px;
+        }
     </style>
 </head>
 
@@ -29,7 +34,6 @@
     <div class="svg">
         <!-- Здесь временно лежит svg спрайт -->
     </div>
-
 
     <header class="header">
         <div class="wrapper">
@@ -46,87 +50,134 @@
             </div> -->
             <div class="header__logo">
                 <div class="wr">
-                    <svg class="l1" width="220px" height="220px">
+                    <svg class="l1" width="120" height="120px">
                         <use xlink:href="#logo_bell"></use>
                     </svg>
 
-                    <svg  class="l2" width="120px" height="120px">
+                    <svg class="l2" width="71px" height="83px">
                         <use xlink:href="#DB"></use>
                     </svg>
-   
+
                 </div>
             </div>
-   
+
 
 
             <div class="nav-user">
-                <ul class="nav-user__item nav-user__item--main">
-                    <li class="nav-user__items nav-user__items--home">
+                <ul class="nav-user__items nav-user__items--main">
+                    <li class="nav-user__item nav-user__item--home">
                         Home
                     </li>
-                    <li class="nav-user__items nav-user__items--catalog">
+                    <li class="nav-user__item nav-user__item--catalog">
                         <a href="catalog.html">
                             Catalog
                         </a>
                     </li>
-                    <li class="nav-user__items nav-user__items--blog">
+                    <li class="nav-user__item nav-user__item--blog">
                         <a href="blog.html">
                             Blog
                         </a>
                     </li>
-                    <li class="nav-user__items nav-user__items--contact">
+                    <li class="nav-user__item nav-user__item--contact">
                         <a href="contact.html">
                             Contacts
                         </a>
                     </li>
                 </ul>
-                <ul class="nav-user__item">
-                    <ul class="nav-user__item nav-user__item--user">
-                        <li class="nav-user__items nav-user__items--search">
-                            Search
-                        </li>
-                        <li class="nav-user__items nav-user__items--user">
-                            User
-                        </li>
-                        <li class="nav-user__items nav-user__items--cart">
-                            Cart
-                        </li>
-                    </ul>
+
+                <ul class="nav-user__items nav-user__item--user">
+                    <li class="nav-user__item nav-user__item--search">
+                        Search
+                    </li>
+                    <li class="nav-user__item nav-user__item--user">
+                        User
+                    </li>
+                    <li class="nav-user__item nav-user__item--cart">
+                        Cart
+                    </li>
+                </ul>
             </div>
 
             <nav class="main-nav">
-                <ul class="main-nav__items">
-                    <li class="main-nav__items main-nav__items-home">
-                        Home
+                <ul class="main-nav__items main-nav__items-left">
+                    <li class="main-nav__item main-nav__items-masks">
+                        <a href="catalog.html" class="main-nav__masks">
+                            Masks
+                        </a>
                     </li>
-                    <li class="main-nav__items main-nav__items-Catalog">
+                    <li class="main-nav__item main-nav__item-snorkels">
+                        <a href="catalog.html" class="main-nav__snorkels">
+                            Snorkels
+                        </a>
+                    </li>
+                    <li class="main-nav__item main-nav__item-fins">
+                        <a href="catalog.html" class="main-nav__fins">
+                            Fins
+                        </a>
+                    </li>
+                    <li class="main-nav__item main-nav__item-gloves">
+                        <a href="catalog.html" class="main-nav__gloves">
+                            Gloves
+                        </a>
+                    </li>
+                    <li class="main-nav__item main-nav__item-wetsuits">
+                        <a href="catalog.html" class="main-nav__wetsuits">
+                            Wetsuits
+                        </a>
+                    </li>
+                    <li class="main-nav__item main-nav__item-home">
+                        <a href="catalog.html" class="main-nav__atalog">
+                            Drysuits
+                        </a>
+                    </li>
+                    <li class="main-nav__item main-nav__item-buoys">
+                        <a href="catalog.html" class="main-nav__buoys">
+                            Buoys
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="main-nav__items main-nav__items-right">
+
+                    <li class="main-nav__item main-nav__items-knives">
+                        <a href="catalog.html" class="main-nav__knives">
+                            Knives
+                        </a>
+                    </li>
+                    <li class="main-nav__item main-nav__item-Catalog">
                         <a href="catalog.html" class="main-nav__atalog">
                             Masks
                         </a>
                     </li>
-                    <li class="main-nav__items main-nav__items-home">
-                        <a href="catalog.html" class="main-nav__atalog">
-                            Fins
+                    <li class="main-nav__item main-nav__item-socks">
+                        <a href="catalog.html" class="main-nav__socks">
+                            Socks
                         </a>
                     </li>
-                    <li class="main-nav__items main-nav__items-home">
+                    <li class="main-nav__item main-nav__item-home">
                         <a href="catalog.html" class="main-nav__atalog">
                             Snorkels
                         </a>
                     </li>
-                    <li class="main-nav__items main-nav__items-home">
-                        <a href="catalog.html" class="main-nav__atalog">
-                            Catalog
+                    <li class="main-nav__item main-nav__item-bags">
+                        <a href="catalog.html" class="main-nav__bags">
+                            Bags
                         </a>
                     </li>
-                    <li class="main-nav__items main-nav__items-home">
-                        <a href="catalog.html" class="main-nav__atalog">
-                            Catalog
+                    <li class="main-nav__item main-nav__item-weights">
+                        <a href="catalog.html" class="main-nav__weights">
+                            Weights
                         </a>
                     </li>
+                    <li class="main-nav__item main-nav__item-accessories">
+                        <a href="catalog.html" class="main-nav__accessories">
+                            Accessories
+                        </a>
+                    </li>
+                </ul>
 
 
-                    <ul class="main-nav__subnav subnav__items">
+                <!-- <ul class="main-nav__subnav subnav__items">
                         <li class="subnav__items">
                             Masks
                         </li>
@@ -147,7 +198,7 @@
                             Contact
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </nav>
         </div>
     </header>

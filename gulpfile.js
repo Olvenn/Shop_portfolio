@@ -64,8 +64,12 @@ function js() {
     return gulp.src('./src/js/**/*')
         .pipe(gulp.dest('./build/js'))
         .pipe(gulpif(isSync, browserSync.stream()));
+}
 
-
+function fonts() {
+    return gulp.src('./src/fonts/**/*')
+        .pipe(gulp.dest('./build/fonts'))
+        .pipe(gulpif(isSync, browserSync.stream()));
 }
 
 function html() {
@@ -103,7 +107,7 @@ function grid(done) {
 }
 
 let build = gulp.series(clear,
-    gulp.parallel(styles, img, html, js)
+    gulp.parallel(styles, img, html, js, fonts)
 );
 
 gulp.task('build', gulp.series(grid, build));

@@ -9,7 +9,7 @@
     z-index: 10;
     position: absolute;
     top: 5px;
-    left: 50%;
+    left: 46%;
     transform: translate(-50%, 0);
     height: 100%;
     /* z-index: -10; */
@@ -20,7 +20,6 @@
 }
 
 .l1 {
-    width: 200px;
     position: absolute;
     top: 0;
     left: 0;
@@ -28,11 +27,10 @@
 
 .l2 {
     position: absolute;
+    // background: url(../img/logo_w.svg) no-repeat top center;
     top: 20px;
-    left: 150px;
+    left: 120px;
 }
-
-
 
 .nav-user {
     /* background:  linear-gradient(90deg, rgba(40,50,60,1) 45%, rgba(255,255,255,1) 50%, rgba(40,50,60,1) 55%); */
@@ -43,35 +41,60 @@
     justify-content: space-between;
     background-color: $color-primary;
     color: $color-white;
+    padding: 0 20px;
     font-size: 20px;
-}
-
-.nav-user__item {
-    display: flex;
 }
 
 .nav-user__items {
     display: flex;
-    padding: 20px 30px;
 }
 
-// .nav-user__item--search {
-//     margin-right: auto;
-// }
+.nav-user__item {
+    padding: 20px 10px;
+}
+
 .subnav__items {
     display: none;
 }
 
-// .main-nav__items-shop {
-//     margin-right: auto;
-// }
 .main-nav {
-    box-shadow: inset 0 30px 30px -20px $color-primary;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // box-shadow: inset 0 30px 30px -20px $color-primary;
     box-shadow: inset 0px 0px 20px $color-primary-dark;
     /* width: 100vw; */
     /* background: linear-gradient(90deg, white 45%, rgba(40,50,60,1) 45%, rgba(255,255,255,1) 50%, rgba(40,50,60,1) 55%, white 55%); */
 }
 
+.main-nav__items {
+    // border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 30%;
+    justify-content: center;
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+.main-nav__item {
+    padding: 5px 10px;
+    border-radius: 5px;
+    // border: 1px solid red;
+}
+
+.main-nav__item:hover {
+    box-shadow: inset 0px 0px 10px $color-primary-dark;
+}
+
+.main-nav__item:active {
+    box-shadow: inset 0px 0px 20px $color-primary-dark;
+}
+
+// .main-nav__item:nth-child(2n) {
+//     margin: -50px -20px -20px -20px;
+// }
 
 /* .wave::after{
     content: "";
